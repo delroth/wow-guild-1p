@@ -237,7 +237,7 @@ class Character(DictLike):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(usage='Generates WoW guild one pager.')
     parser.add_argument('--config', type=str, nargs='?', default='config.yml')
-    parser.add_argument('-o', '--outdir', type=str, nargs='?', default='out')
+    parser.add_argument('-o', '--outdir', type=str, nargs='?', default='build')
     args = parser.parse_args()
 
     config = load_config(args.config)
