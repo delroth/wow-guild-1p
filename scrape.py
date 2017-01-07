@@ -269,17 +269,16 @@ if __name__ == '__main__':
                                      regional_info=this_regional_info,
                                      config=config)
 
-        out_dir = os.path.join(args.outdir,
-                               normalize_name(guild['region']),
-                               normalize_name(guild['realm']))
-        os.makedirs(out_dir, exist_ok=True)
-        out_path = os.path.join(
-            out_dir, normalize_name(guild['name']) + '.json')
+        base_out_path = os.path.join(
+            normalize_name(guild['region']),
+            normalize_name(guild['realm']),
+            normalize_name(guild['name']) + '.json')
 
         # Store the path in the config object to be serialized for Javascript.
-        guild['path'] = out_path
+        guild['path'] = base_out_path
 
-        print(guild_info)
+        out_path = os.path.join(args.outdir, base_out_path)
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         guild_info.write_to(open(out_path, 'w'))
 
     del config['api_key']
