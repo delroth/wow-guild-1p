@@ -282,6 +282,7 @@ if __name__ == '__main__':
         print(guild_info)
         guild_info.write_to(open(out_path, 'w'))
 
+    del config['api_key']
     open(os.path.join(args.outdir, 'config.json'), 'w').write(
             json.dumps(config))
     print('Done!')
