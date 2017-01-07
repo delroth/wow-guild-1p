@@ -1,0 +1,35 @@
+api_key: EXAMPLE
+
+# Rate limit for Armory API calls. The default rate limit for API keys is
+# 100 QPS, so default to half of this to give ourselves for margin.
+api_qps_limit: 50
+
+# Ignore members with lower level than this number.
+min_level: 110
+
+# Bounds for each step of the ilvl histogram. Lower bound is inclusive, upper
+# bound is not (Python range style).
+ilevel_histogram:
+  - [850, 855]
+  - [855, 860]
+  - [860, 865]
+  - [865, 870]
+  - [870, 875]
+  - [875, 880]
+  - [880, 885]
+  - [885, 890]
+  - [890, 895]
+  - [895, 900]
+  - [900, 1000]
+
+# Raids that are relevant for current progress.
+progress_raids:
+  - The Emerald Nightmare
+  - Trial of Valor
+  - The Nighthold
+
+guilds:
+  -
+    region: eu
+    realm: Archimonde
+    name: Martine fait du camping

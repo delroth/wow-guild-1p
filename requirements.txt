@@ -1,0 +1,13 @@
+autoflake==0.6.6
+autopep8==1.2.4
+docformatter==0.8
+pep8==1.7.0
+progressbar2==3.12.0
+pyflakes==1.4.0
+pyformat==0.7
+python-utils==2.0.1
+PyYAML==3.12
+requests==2.12.4
+six==1.10.0
+unify==0.2
+untokenize==0.1.1
