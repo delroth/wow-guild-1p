@@ -1,0 +1,24 @@
+.DataVis {
+  margin-top: 2em;
+}
+
+.DataVis-raid-summary {
+  font-family: monospace;
+  margin-right: 2em;
+}
+
+.DataVis-raid-normal {
+  color: green;
+}
+
+.DataVis-raid-heroic {
+  color: yellow;
+}
+
+.DataVis-raid-mythic {
+  color: orange;
+}
+
+.DataVis-raid-cleared {
+  font-weight: bold;
+}

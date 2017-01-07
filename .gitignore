@@ -1,5 +1,13 @@
 config.yml
-out
+public/**/*.json
+
+# Below this line: default React .gitignore contents.
+
+node_modules
+coverage
+build
+.env
+npm-debug.log
 
 # Below this line: default GitHub Python .gitignore contents.
 
